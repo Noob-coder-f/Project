@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Position on Hover</title>
+    <link rel="stylesheet" href="index2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+
+    <main class="main ">
+
+
+        <div id="myDiv">
+
+            <div class="pr text-white">
+                WILL YOU MARRY WITH ME :)?
+            </div>
+            <div class="btns">
+                <div class="yes" id="yes">
+                    <button class="y" onclick="contact()">Yes</button>
+                </div>
+                <div class="no" id="no">
+                    <button>No</button>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </main>
+
+
+
+
+    <script>
+        const myDiv = document.getElementById("no");
+
+        // Check if the device is touch-enabled
+        const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+        const moveDiv = () => {
+            const randomX = Math.floor(Math.random() * (window.innerWidth - myDiv.offsetWidth));
+            const randomY = Math.floor(Math.random() * (window.innerHeight - myDiv.offsetHeight));
+
+            // Apply the new positions
+            myDiv.style.left = randomX + "px";
+            myDiv.style.top = randomY + "px";
+            console.log("Moved to:", randomX, randomY);
+        };
+
+        // Attach the correct event listener based on the device type
+        if (isTouchDevice) {
+            myDiv.addEventListener("touchstart", moveDiv);
+        } else {
+            myDiv.addEventListener("mouseover", moveDiv);
+        }
+
+        console.log("its working...")
+
+        const contact=()=>{
+            window.location.href ='contact.html'        ;
+        }
+    </script>
+</body>
+</html>

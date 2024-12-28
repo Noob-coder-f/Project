@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url('Moon.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    /* z-index: 10; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#myDiv {
+
+    /* background-color: rgb(32, 81, 98); */
+    position: absolute;
+
+    border: 1px solid white;
+    width: 30rem;
+    height: 17rem;
+    left: 6rem;
+    top: 7rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pr {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button:hover{
+    background-color: gray;
+}
+
+.yes {
+    margin: 5px;
+    position: relative;
+    top: 10px;
+    right: 95px;
+}
+
+#no {
+    position: absolute;
+    transition: all 0.2s ease;
+    margin-top: 15px;
+    margin-left: 115px;
+}
+
+button {
+    padding: 1rem 1.8rem;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+}
+
+
+      /* contact */
+
+
+      
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        background: url('Moon.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .form-container {
+        position: relative;
+        width: 89vw;
+        max-width: 400px;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.6); /* Black blur effect */
+        border: 1px solid white; /* White border for the form */
+        border-radius: 8px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        left: 15px;
+        height: 95%;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid white; /* White border for input */
+        border-radius: 5px;
+        background: transparent; /* Transparent background */
+        color: white;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .form-group textarea {
+        resize: none;
+        height: 120px; /* Set height for the text area */
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6); /* Placeholder with opacity */
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #00bcd4; /* Focus effect */
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 0.8rem;
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+
+@media (max-width: 480px) {
+    .main {
+        /* background-image: url('Moon.jpg'); */
+        background-image: url('p3.jpg');
+        width: 100vw;
+        height: 100vh;
+        background-size: cover; /* Image covers the screen, may crop */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents repeating */        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    #myDiv {
+        position: absolute;
+        border: 1px solid white;
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pr {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    button:hover{
+        background-color: gray;
+    }
+    
+
+    .yes, 
+    #no {
+        position: static;
+        margin: 5px 0;
+    }
+
+    
+
+        /* contact */
+
+
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        background: url('Moon.jpg') no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .c-main{
+        background: url('p2.jpg');
+
+    }
+
+    .form-container {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.6); /* Black blur effect */
+        border: 1px solid white; /* White border for the form */
+        border-radius: 8px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        left: 15px;
+        height: 95%;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid white; /* White border for input */
+        border-radius: 5px;
+        background: transparent; /* Transparent background */
+        color: white;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .form-group textarea {
+        resize: none;
+        height: 120px; /* Set height for the text area */
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6); /* Placeholder with opacity */
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #00bcd4; /* Focus effect */
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 0.8rem;
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}

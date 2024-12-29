@@ -57,7 +57,7 @@ button:hover{
 
 #no {
     position: absolute;
-    transition: all 0.2s ease;
+    transition: all 0.1s cubic-bezier(1,0,0,1);;
     margin-top: 15px;
     margin-left: 115px;
 }
@@ -185,7 +185,7 @@ button {
         position: absolute;
         border: 1px solid white;
         width: 90%;
-        height: auto;
+        height: 25%;
         left: 5%;
         top: 10rem;
         display: flex;
@@ -211,11 +211,20 @@ button {
     }
     
 
-    .yes, 
-    #no {
-        position: static;
-        margin: 5px 0;
+    .yes {
+        position: absolute;
+        /* margin: 5px 0; */
+        /* margin-left: 4rem; */
+        margin-top: 6rem;
+        margin-right: 4rem;
     }
+    #no {
+        position: absolute;
+        /* margin: 5px 7px; */
+        margin-left: 4rem;
+        margin-top: 5.5rem;
+    }
+
 
     
 
